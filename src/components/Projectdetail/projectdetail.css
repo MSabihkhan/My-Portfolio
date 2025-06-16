@@ -1,0 +1,108 @@
+.Detailview{
+    margin-left: 150px;
+    margin-right: 150px;
+    display: flex;
+    flex-direction: row;
+    align-items: space-between;
+    gap: 41px;
+}
+
+
+.Highlights{
+    width: 525px;
+    display: flex;
+    flex-direction: column;
+}
+.Highlights h1{
+    font-size: 45px;
+    color: white;
+    margin: 0;
+}
+.Highlights h3{
+    color: #d4ff00;
+    margin: 0;
+}
+
+.Stack-and-buttons h2{
+    color: white;
+    margin: 0;
+    font-size: 27px;
+}
+
+
+.Highlights p{
+    text-align: justify;
+    color: grey;
+    font-size: 21px;
+    font-weight: lighter;
+}
+
+.stack-icons img {
+  width: 60px;
+  margin-right: 10px;
+}
+
+.Stack-and-buttons{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.Image img{
+    width: 812px;
+    height: 80vh;
+    border-radius: 10px;
+}
+
+
+.features{
+    margin-top: 20px;
+    margin-left: 150px;
+    margin-right: 150px;
+    background-color:rgba(22, 27, 34, 1) ;
+    border-radius: 10px;
+    padding-left: 46px;
+    padding-top: 39px;
+    padding-right: 46px;
+    padding-bottom: 39px;
+}
+.features h3{
+    font-size: 40px;
+    color: #d4ff00;
+    margin: 0;
+}
+.features ul{
+    color: white;
+}
+.features li{
+    line-height: 25px;
+}
+
+.buttons {
+  background-color: #d4ff00;
+  color: black;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+  transition: background-color 0.5s ease;
+  display: inline-block; /* prevent stretching */
+  padding: 0.5rem 1rem;
+}
+
+.buttons a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; 
+  transition: color 0.5s ease;
+}
+
+.buttons:hover {
+  background-color: black;
+}
+
+.buttons a:hover {
+  color: #d4ff00;
+}

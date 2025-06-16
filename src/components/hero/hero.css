@@ -1,0 +1,158 @@
+@font-face {
+      font-family: Bebas;
+      src: url('../../assets/fonts/BebasNeue-Regular.ttf');
+  }
+  .hero {
+    position: relative;
+    text-align:center ;
+    color: #d4ff00;
+    z-index: 2;
+    background-color: rgba(19, 19, 19, 1);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center ;
+    margin-top: -130px; 
+  }
+
+.hero > *:not(.backdrop-container) {
+  position: relative;
+  z-index: 2; /* Keeps content above backdrop */
+}
+  
+  .name {
+    font-size: 6rem;
+    font-weight: 900;
+    color: #d4ff00;
+    font-family: 'Humane' ;
+    margin: 0px 0px 0px 0px;
+    font-size: 339px;
+  }
+  
+  .intro, .desc {
+    font-size: 1.2rem;
+    color: #d4ff00;
+    font-family: sans-serif;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-size: 32px;
+  
+  }
+  .desc{
+    font-size: 24px;
+    margin-top: -35px;
+    max-width: 440px;     /* optional: limit line length */
+    margin-left: auto;    /* center horizontally */
+    margin-right: auto;
+  }
+  
+  .icons {
+  display: flex;                 /* Use flexbox for horizontal alignment */
+  justify-content: center;       /* Center icons horizontally */
+  gap: 20px;                    /* Space between icons */
+  margin-top: 15px;             /* Space below .desc */
+}
+
+.icons a img {
+  width: 40px;
+  height: 40px;
+  transition: filter 0.3s ease;
+}
+
+
+
+
+.backdrop-container {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.backdrop-left,
+.backdrop-right {
+  position: absolute;
+  top: 0;
+  font-size: 200px;
+  font-family: Bebas, sans-serif;
+  color: rgba(28, 28, 28, 1);
+  -webkit-text-stroke: 2px #d4ff00;
+  opacity: 0.1;
+  white-space: nowrap;
+}
+
+.backdrop-left {
+  left: -100%; /* Start off-screen left */
+  animation: moveRight 20s linear infinite;
+}
+
+.backdrop-right {
+  right: -100%; /* Start off-screen right */
+  animation: moveLeft 20s linear infinite;
+  top:200px
+}
+
+@keyframes moveRight {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes moveLeft {
+  0% {
+    right: -100%;
+  }
+  100% {
+    right: 100%;
+  }
+}
+.fade-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1; /* Stays under hero content but over backdrop */
+  overflow: hidden;
+}
+@media only screen and (max-width: 767px){
+.fade-mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  pointer-events: none;
+  z-index: 1; /* Stays under hero content but over backdrop */
+  overflow: hidden;
+}
+}
+.fade-mask::before,
+.fade-mask::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 150px;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.fade-mask::before {
+  left: 0;
+  background: linear-gradient(to right, #131313 0%, transparent 100%);
+}
+
+.fade-mask::after {
+  right: 0;
+  background: linear-gradient(to left, #131313 0%, transparent 100%);
+}
+  

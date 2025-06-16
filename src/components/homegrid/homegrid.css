@@ -1,0 +1,25 @@
+@media only screen and (min-width: 1024px){
+.Home-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding-left: 150px;
+  padding-right: 150px;
+  flex-wrap: nowrap; 
+  overflow-x: auto;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+}
+  @media only screen and (max-width: 767px){
+    .Home-grid{
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 16px;
+    padding-left: 15px;
+    scroll-padding-left: 20px; 
+    padding-right: 15px;
+    }
+  }

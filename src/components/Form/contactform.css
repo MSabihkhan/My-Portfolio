@@ -1,0 +1,105 @@
+/* Example styles — change them as you like */
+
+.form-container{
+    padding: 58px 56px;
+    display: flex;
+    background-color:#d4ff00 ;
+    justify-content: space-between;
+    margin-left: 150px;
+    margin-right: 150px;
+    border-radius: 10px;
+    gap: 50px;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-self: flex-end;
+  width: 400px;
+  gap: 30px;
+}
+
+.form-input,
+.form-textarea {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  color: #000;
+}
+
+.form-textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.form-button {
+  padding: 12px;
+  background-color: black;
+  color: #d4ff00;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 25px;
+  transition: 0.5s;
+}
+.form-button:hover{
+  background-color: #d4ff00;
+  color: #000;
+  border-width: 2px;
+}
+.contents{
+    width: 300px;
+    font-size: 15px;
+    text-align: justify;
+}
+.contents p {
+    margin: 0;
+}
+.contents h1{
+    font-size: 120px;
+    font-family: 'Humane';
+    margin: 0;
+}
+
+
+@media only screen and (max-width: 767px){
+  .form-container{
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 8px;
+    margin-right: 8px;
+    border-radius: 10px;
+    gap: 50px;
+}
+.contact-form{
+  align-self: center;
+  width: 80vw;
+  margin-right: 30px;
+
+}
+.form-input,.form-textarea{
+  width: 100%;
+}
+
+.contents h1{
+    font-size: 80px;
+    font-family: 'Humane';
+    margin: 0;
+    text-align: center;
+}
+
+
+.form-button {
+  padding: 12px;
+  background-color: black;
+  color: #d4ff00;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  transition: 0.5s;
+  width: fit-content;
+}
+}
