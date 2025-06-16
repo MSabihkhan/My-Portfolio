@@ -36,7 +36,7 @@ const dummyProject = {
 function App() {
   return (
     
-    <Router>
+    <Router basename="/My-Portfolio">
       <Navbar/>
       <Routes>
         <Route path="/" element={<Home />} />
