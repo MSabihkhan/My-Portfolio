@@ -1,7 +1,7 @@
 @font-face {
     font-family: 'Humane';
-    src: url('../src/assets/fonts/Humane-Bold.woff2') format('woff2'),
-         url('../src/assets/fonts/Humane-Bold.woff') format('woff');
+    src: 
+         url('../src/assets/fonts/Humane-Bold.ttf') format('ttf');
     font-weight: normal;
     font-style: normal;
   }
