@@ -10,6 +10,18 @@
       src: url('../src/assets/fonts/BebasNeue-Regular.ttf');
   }
 
+@media only screen and (max-width: 767px){
+@font-face {
+    font-family: 'Humane';
+    src: url('../src/assets/fonts/Humane-Bold.woff2') format('woff2'),
+         url('../src/assets/fonts/Humane-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+
+
 body{
   background-color: rgba(19, 19, 19, 1);
   min-height: 100vh;
